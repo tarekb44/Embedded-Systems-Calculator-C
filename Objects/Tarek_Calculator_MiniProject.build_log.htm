@@ -1,0 +1,226 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ÂµVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Tarek Bessalah, Leeds, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL
+ 
+<h2>Project:</h2>
+C:\Users\tbess\OneDrive\Desktop\University\Final Year\ELEC3662 - Embedded Systems\Tarek_Calculator_MiniProject\Tarek_Calculator_MiniProject.uvprojx
+Project File Date:  01/07/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+engine.c(1): warning: In file included from...
+./engine.h(4): warning: In file included from...
+./lcd_init.h(72): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+engine.c(1): warning: In file included from...
+./engine.h(5): warning: In file included from...
+./keypad_init.h(4): warning: In file included from...
+./keypad_init.h(67): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+engine.c(1): warning: In file included from...
+./engine.h(5): warning: In file included from...
+./keypad_init.h(8): warning: 'SYSCTL_RCGC2_R' macro redefined [-Wmacro-redefined]
+#define SYSCTL_RCGC2_R          (*((volatile unsigned long*) 0x400FE108))
+        ^
+./lcd_init.h(7): note: previous definition is here
+#define SYSCTL_RCGC2_R          (*((volatile unsigned long *) 0x400FE108))
+        ^
+engine.c(1): warning: In file included from...
+./engine.h(5): warning: In file included from...
+./keypad_init.h(67): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+engine.c(1): warning: In file included from...
+./engine.h(14): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+engine.c(4): warning: no previous extern declaration for non-static variable 'index' [-Wmissing-variable-declarations]
+int index = 0;
+    ^
+engine.c(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int index = 0;
+^
+engine.c(9): warning: no previous extern declaration for non-static variable 'shiftMode' [-Wmissing-variable-declarations]
+int shiftMode = 0;
+    ^
+engine.c(9): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int shiftMode = 0;
+^
+engine.c(11): warning: no previous extern declaration for non-static variable 'completion' [-Wmissing-variable-declarations]
+int completion = 0;
+    ^
+engine.c(11): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int completion = 0;
+^
+engine.c(14): warning: no previous extern declaration for non-static variable 'A' [-Wmissing-variable-declarations]
+unsigned long A[2] = {0x2B, 0x2A};
+              ^
+engine.c(14): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned long A[2] = {0x2B, 0x2A};
+^
+engine.c(15): warning: no previous extern declaration for non-static variable 'B' [-Wmissing-variable-declarations]
+unsigned long B[2] = {0X2D, 0x2F};
+              ^
+engine.c(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned long B[2] = {0X2D, 0x2F};
+^
+engine.c(16): warning: no previous extern declaration for non-static variable 'C' [-Wmissing-variable-declarations]
+unsigned long C[2] = {0x2E, 0x45};
+              ^
+engine.c(16): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned long C[2] = {0x2E, 0x45};
+^
+engine.c(123): warning: implicitly declaring library function 'isdigit' with type 'int (int)' [-Wimplicit-function-declaration]
+        if(isdigit(charArray[j]))
+           ^
+engine.c(123): note: include the header <ctype.h> or explicitly provide a declaration for 'isdigit'
+engine.c(184): warning: implicit conversion turns floating-point number into integer: 'double' to 'int' [-Wfloat-conversion]
+                        currDec = ((currNum * 0.10) + firstDecNum);
+                                ~  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+engine.c(202): warning: implicitly declaring library function 'sprintf' with type 'int (char *, const char *, ...)' [-Wimplicit-function-declaration]
+    sprintf(calculatedResult, '%f', ans);
+    ^
+engine.c(202): note: include the header <stdio.h> or explicitly provide a declaration for 'sprintf'
+engine.c(202): warning: multi-character character constant [-Wmultichar]
+    sprintf(calculatedResult, '%f', ans);
+                              ^
+engine.c(202): warning: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+    sprintf(calculatedResult, '%f', ans);
+                              ^~~~
+engine.c(202): warning: format string is not a string literal [-Wformat-nonliteral]
+    sprintf(calculatedResult, '%f', ans);
+                              ^~~~
+engine.c(115): warning: unused variable 'x' [-Wunused-variable]
+    int x = 0;
+        ^
+engine.c(213): warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+engine.c(373): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+        sprintf(Output, "%f", Number[0]);
+        ~~~~~~~               ^~~~~~~~~
+engine.c(378): warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+        if(Number[0] == 0){
+           ~~~~~~~~~ ^  ~
+engine.c(405): warning: implicitly declaring library function 'pow' with type 'double (double, double)' [-Wimplicit-function-declaration]
+        answer = Number[i] * pow(10, Number[i + 1]);
+                             ^
+engine.c(405): note: include the header <math.h> or explicitly provide a declaration for 'pow'
+engine.c(405): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+        answer = Number[i] * pow(10, Number[i + 1]);
+               ~ ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+engine.c(405): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+        answer = Number[i] * pow(10, Number[i + 1]);
+                             ~~~     ^~~~~~~~~~~~~
+engine.c(405): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+        answer = Number[i] * pow(10, Number[i + 1]);
+                 ^~~~~~~~~ ~
+engine.c(463): warning: result of comparison against a string literal is unspecified (use an explicit string comparison function instead) [-Wstring-compare]
+                if(charArray[i] == "") break;
+                                ^  ~~
+engine.c(463): warning: comparison between pointer and integer ('char' and 'char *') [-Wpointer-integer-compare]
+                if(charArray[i] == "") break;
+                   ~~~~~~~~~~~~ ^  ~~
+engine.c(494): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+engine.c(3): warning: no previous extern declaration for non-static variable 'charArray' [-Wmissing-variable-declarations]
+char charArray[16]; 
+     ^
+engine.c(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char charArray[16]; 
+^
+engine.c(18): warning: no previous extern declaration for non-static variable 'OperatorIndx' [-Wmissing-variable-declarations]
+int OperatorIndx;
+    ^
+engine.c(18): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int OperatorIndx;
+^
+engine.c(19): warning: no previous extern declaration for non-static variable 'NumberIndx' [-Wmissing-variable-declarations]
+int NumberIndx;
+    ^
+engine.c(19): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int NumberIndx;
+^
+engine.c(20): warning: no previous extern declaration for non-static variable 'DigitIndx' [-Wmissing-variable-declarations]
+int DigitIndx;
+    ^
+engine.c(20): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int DigitIndx;
+^
+engine.c(21): warning: no previous extern declaration for non-static variable 'Number' [-Wmissing-variable-declarations]
+float Number[40];
+      ^
+engine.c(21): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float Number[40];
+^
+engine.c(22): warning: no previous extern declaration for non-static variable 'Digit' [-Wmissing-variable-declarations]
+int Digit[40];
+    ^
+engine.c(22): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int Digit[40];
+^
+engine.c(23): warning: no previous extern declaration for non-static variable 'Operator' [-Wmissing-variable-declarations]
+char Operator[40];
+     ^
+engine.c(23): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char Operator[40];
+^
+35 warnings generated.
+compiling engine.c...
+linking...
+Program Size: Code=9224 RO-data=1168 RW-data=152 ZI-data=632  
+".\Objects\Tarek_Calculator_MiniProject.axf" - 0 Error(s), 35 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\tbess\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\tbess\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Source file:   Device\Source\system_TM4C123.c
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+      Include file:  Device\Include\TM4C123\TM4C123.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
